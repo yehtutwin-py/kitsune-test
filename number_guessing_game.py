@@ -6,12 +6,15 @@ while True:
         difficulty = input("Choose a difficulty level (easy, medium, hard): ").lower()
         if difficulty == "easy":
             num = random.randint(1, 50)
+            print("You have chosen Easy difficulty. Guess a number between 1 and 50.")
             break
         elif difficulty == "medium":
             num = random.randint(1, 100)
+            print("You have chosen Medium difficulty. Guess a number between 1 and 100.")
             break
         elif difficulty == "hard":
             num = random.randint(1, 200)
+            print("You have chosen Hard difficulty. Guess a number between 1 and 200.")
             break
         else:
             print("Invalid difficulty level. Please choose again.")
