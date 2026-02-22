@@ -6,7 +6,6 @@ while True:
     print("4. Divide")
     print("5. Exit")
     user_choice = input("Choose an option(1-5): ")
-    # decimal 2 places
     if user_choice == "1":
         num1 = round(float(input("Enter the first number: ")), 2)
         num2 = round(float(input("Enter the second number: ")), 2)

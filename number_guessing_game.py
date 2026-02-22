@@ -16,13 +16,18 @@ while True:
         else:
             print("Invalid difficulty level. Please choose again.")
             continue
+    print("Max attempts: 10")
     while True:
-        print("Max attempts: 10")
         guess = int(input("Enter your winning guess: "))
         if attempts > 10:
             print(f"Max 10 attempts! \nGame Over! The correct number was {num}.")
             attempts = 0
-            break
+            replay = input("Replay the game to try again! (Y/N): ")
+            if replay.lower() == "y":
+                attempts = 0
+                break
+            else:
+                exit()
         elif guess > num:
             print("Too High! Try Again.")
             attempts += 1
